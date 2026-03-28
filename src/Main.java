@@ -1,13 +1,20 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 void main() {
-  //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-  // to see how IntelliJ IDEA suggests fixing it.
-  IO.println(String.format("Hello and welcome!"));
+    // uložení informací o prodejci a vytvoření prodejce1 a prodejce2 z class
+    prodejceMrkve prodejce1 = new prodejceMrkve();
+    prodejce1.jmeno = "Jan Novák";
+    prodejce1.datumNarozeni = LocalDate.of(1990, 1, 1);
+    prodejce1.pocetSmluv = 10;
+    prodejce1.mrkevTuny = 150;
+    prodejce1.senior = false;
 
-  for (int i = 1; i <= 5; i++) {
-    //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-    // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-    IO.println("i = " + i);
-  }
+    prodejceMrkve prodejce2 = new prodejceMrkve();
+    prodejce2.jmeno = "Marie Černá";
+    prodejce2.datumNarozeni = LocalDate.of(1975, 2, 13);
+    prodejce2.pocetSmluv = 68;
+    prodejce2.mrkevTuny = 658;
+    prodejce2.senior = true;
+
+    // výpis jmen v konzoli
+    System.out.println("První prodejce je " + prodejce1.jmeno);
+    System.out.println("Jméno druhého prodejce je " + prodejce2.jmeno);
 }
