@@ -1,4 +1,9 @@
-package PACKAGE_NAME;
+import java.time.LocalDate;
 
-public class prodejcemrkve {
+public class prodejceMrkve {
+    String jmeno;
+    LocalDate datumNarozeni;
+    int pocetSmluv;
+    double mrkevTuny;
+    boolean senior;
 }
